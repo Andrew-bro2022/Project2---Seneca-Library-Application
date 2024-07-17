@@ -134,8 +134,6 @@ Select one of the following found matches:
 > Row Number(select publication)
 >
 ```
-### Execution output: `Publication* getPub(int libRef)`  method
-Create a method to return the address of a Publication object in the PPA that has the library reference number matching the "libRef" argument. 
 
 ### Execution output: the newPublication() method 
 If the NOLP is equal to the SENECA_LIBRARY_CAPACITY, print: `"Library is at its maximum capacity!"` and exit. 
