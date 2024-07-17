@@ -1,4 +1,4 @@
-# Project2---Modern-Library-Application
+# Project2---A Modern-Library-Application
 
 **Summary**: 
 1. Using C++ to design an application that receives the publications and stores them in the system with the information needed for their retrieval.
