@@ -135,24 +135,6 @@ Select one of the following found matches:
 >
 ```
 
-### Execution output: the newPublication() method 
-If the NOLP is equal to the SENECA_LIBRARY_CAPACITY, print: `"Library is at its maximum capacity!"` and exit. 
-
-Otherwise, 
-- print: `"Adding new publication to the library"`
-- get the publication type from the user.
-- in a publication pointer, instantiate a dynamic "Publication" or "Book" based on the user's choice.
-- Read the instantiated object from the cin object.
-- If the cin fails, flush the keyboard, print "Aborted!" and exit.
-- If the cin is ok, then confirm that the user wants to add the publication to the library using this prompt:
-`"Add this publication to the library?"`. If the user did not confirm, print "Aborted!" and exit.
-- After the user confirms, if the publication object is valid
-   - Add one to the LLRN and set the library reference number to the value
-   - Add the publication object's address to the end of the PPA and add one to the NOLP.
-   - set the "changed" flag to true
-   - print: `"Publication added"`
-- If the publication object is not valid print: `"Failed to add publication!"` and delete the allocated memory.
-
 #### Execution output: Adding a new publication to the library 
 ```Text
 Seneca Library Application
@@ -177,13 +159,6 @@ Add this publication to the library?
 > 1
 Publication added
 ```
-### Execution output: The removePublication Method
-- print: `"Removing publication from the library"`
-- Search all the publications
-- If the user selects a publication and confirms to remove the publication using the prompt: `"Remove this publication from the library?"`
-   - Set the library reference of the selected publication to 0 (zero)
-   - set the "changed" flag to true
-   - print: `"Publication removed"`
 
 #### Execution output: removing a publication from the library 
 ```Text
@@ -223,14 +198,6 @@ Remove this publication from the library?
 Publication removed
 ```
 
-### Execution output: The checkOutPub method
-- print: `"Checkout publication from the library"`
-- Search in available publications only
-- If the user selects a publication and confirms to checkout using the prompt: `"Check out publication?"`
-   - read a 5-digit number from the console, if invalid print: `"Invalid membership number, try again: "` and read again
-   - set the membership number of the selected publication the integer value. 
-   - set the changed flag to true
-   - print: `"Publication checked out"`
 
 #### Execution output: Checking out a publication
 ```Text
@@ -265,16 +232,6 @@ Check out publication?
 Enter Membership number: 12345
 Publication checked out
 ```
-
-### Execution output: The returnPub() Method
-- Print: `"Return publication to the library"`
-- Search for "on loan" publications only
-- If the user selects a publication and confirms the return using the prompt: `"Return Publication?"`
-   - If the publication is more than 15 days on loan, a 50 cents per day penalty will be calculated for the number of days exceeding the 15 days. 
-      - Following message is printed: `Please pay $9.99 penalty for being X days late!`, 9.99 is replaced with the penalty value and X is replaced with the number of late days.
-   - set the membership number of the publication to 0 (zero)
-   - set the "changed" flag to true
-   - print: `"Publication returned"`
 
 #### Execution output: Returning publication to the library
 ```Text
